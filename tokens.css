@@ -1,0 +1,41 @@
+/* GodAlone Design System — CSS custom properties
+   Extracted from godalone-theme/style.css (Theme: GodAlone Premium v2.0)
+   Default = "night" (deep green + gold). html.theme-day = elevated ivory + gold light mode. */
+
+:root{
+  --bg:#064E3B; --bg-2:#065F46; --bg-3:#0b6b50;
+  --panel:#065F46; --panel-2:#054a37; --panel-hi:#0b6b50;
+  --line:rgba(34,197,94,.18); --line-2:rgba(255,255,255,.07);
+  --ink:#F9FAFB; --ink-soft:#D1FAE5; --muted:#8FBFA0;
+  --gold:#22C55E; --gold-bright:#4ADE80; --gold-deep:#15803D; --gold-tan:#86EFAC;
+  --blue:#15803D; --blue-bright:#4ADE80; --teal:#4ADE80;
+  --shadow:0 24px 60px -24px rgba(0,0,0,.75);
+  --shadow-sm:0 10px 30px -14px rgba(0,0,0,.6);
+  --radius:20px; --radius-lg:28px;
+  --hero:
+    radial-gradient(120% 90% at 12% -5%, rgba(34,197,94,.26), transparent 52%),
+    radial-gradient(120% 90% at 88% 105%, rgba(16,185,129,.13), transparent 55%),
+    linear-gradient(162deg,#0b6b50 0%,#075940 52%,#064E3B 100%);
+  --gold-grad:linear-gradient(92deg,var(--gold-deep),var(--gold-bright) 45%,var(--gold));
+  --sheen:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,0));
+  --font-display:'Marcellus',Georgia,'Times New Roman',serif;
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --font-ar:'Scheherazade New','Amiri','Traditional Arabic',serif;
+  --font-ta:'Noto Sans Tamil',var(--font-body);
+  --maxw:1180px;
+}
+html.theme-day{
+  --bg:#F8FFF5; --bg-2:#E8F7E9; --bg-3:#ffffff;
+  --panel:#E8F7E9; --panel-2:#F0FDF4; --panel-hi:#F8FFF5;
+  --line:rgba(167,217,167,.45); --line-2:rgba(30,22,10,.08);
+  --ink:#1F2937; --ink-soft:#4B5563; --muted:#6B8F7A;
+  --gold:#22C55E; --gold-bright:#15803D; --gold-deep:#166534; --gold-tan:#15803D;
+  --blue:#166534; --blue-bright:#16A34A; --teal:#15803D;
+  --shadow:0 24px 60px -28px rgba(6,95,70,.28);
+  --shadow-sm:0 10px 26px -16px rgba(6,95,70,.18);
+  --hero:
+    radial-gradient(120% 90% at 12% -5%, rgba(34,197,94,.08), transparent 52%),
+    radial-gradient(120% 90% at 88% 105%, rgba(21,128,61,.10), transparent 55%),
+    linear-gradient(162deg,#F0FDF4 0%,#EAFAEC 55%,#D1EDD6 100%);
+  --sheen:linear-gradient(180deg,rgba(255,255,255,.6),rgba(255,255,255,0));
+}
